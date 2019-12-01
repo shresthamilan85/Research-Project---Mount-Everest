@@ -1,0 +1,421 @@
+
+/* Base element styles */
+*{
+    margin: 0;
+    padding: 0;
+    line-height: 1.4;
+}
+
+body{
+    font-family: 'Open Sans', sans-serif;
+}
+
+.intro:first-letter {
+    font-size: 200%;
+    font-weight: bold;
+}
+
+img {
+    width: 100%;
+    max-height: 1000px;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul{
+    list-style: none;
+}
+
+h1 a,
+ul li a{
+    color: #222;
+}
+
+h2, p {
+
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+
+.col h2 {
+    margin-top: 15px;
+    text-align: center;
+}
+
+h3, h4{
+    padding-bottom: 10px;
+    padding-top: 25px;  
+}
+
+/* Navigation */
+
+header.main-header {
+    height: 70px;
+    position: relative;
+}
+
+.Nav-img {
+    margin: 0 5px; 
+}
+
+header.main-header {
+    background: #f0eded;
+}
+
+.site-name {
+    font-size: 2em;
+    margin-left: 0px;
+}
+
+.site-name a,
+.main-nav a {
+    text-align: center;
+    display: block;
+    
+}
+.main-nav a {
+    font-size: 1em;
+    text-transform: uppercase;
+    padding:15px;
+    
+}
+.main-nav {
+    display: inline-block;
+    margin-top: 5px;
+    padding-top: 10px;
+}
+
+/* Banner */
+
+.banner {
+    position: relative;
+    width: 100%;
+    text-align: center;
+    height: 395px;
+    background-image:url("../img/Mount_Everest_as_seen_from_Drukair2_PLW_edit.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    object-fit: cover;
+    object-position: center center;
+}
+
+.tagline {
+color: #fff;
+font-size: 2em;
+display: inline-block;
+margin-top: 5px;
+font-weight: bold;
+}
+
+.wrap{
+   width: 90%;
+   min-height: calc(100vh - 58px);
+   margin: 0 auto;
+}
+
+/* About-info */
+
+.mt-about{
+    padding: 40px 0;
+}
+
+.img-container{
+    /* width: 30%; */
+}
+
+h2.title-text{
+    text-transform: uppercase;
+}
+
+
+/* Mt-Lists */
+
+.mt-lists{
+    margin-bottom: 50px;
+}
+.mt-lists .info_box{
+    border: 1px #e9e7e7  solid;
+    padding: 5px;
+}
+
+.info_box .details{
+    padding: 15px;
+}
+
+.galleryContainer .tag{
+    margin-bottom: 10px;
+}
+
+.mt-gallery .tag{
+    margin-top: 20px;
+}
+
+/* Footer */
+
+.main-footer{
+    text-align: center;
+    padding: 30px 0;
+    background-color:#222;
+    color:#fff;
+    margin: 0px;
+}
+
+.tag{
+    text-align: center;
+    font-size: 28px;
+}
+
+.thumbimage {
+    width: 100%;
+    height: 325px;
+    margin: 0px 10px 0px 0px;
+    object-fit: cover;
+    object-position: center center;
+}
+
+.thumbimage2{
+    max-width: 375px;
+    max-height: 250;
+    margin: 0px 10px 0px 0px;
+    object-fit: cover;
+    object-position: center center;
+}
+
+.thumbimage3{
+    width: 170px;
+    height: 220;
+    margin: 0px 10px 0px 0px;
+    object-fit: cover;
+    object-position: center center;
+}
+
+.thumbcaption {
+    border: 0;
+    line-height: 1.4em;
+    padding: 3px;
+    font-size: 94%;
+    text-align: center;
+}
+
+.intro_information {
+    border: 1px solid #a2a9b1;
+    border-spacing: 3px;
+    background-color: #f8f9fa;
+    color: black;
+    margin: 0.5em 0 0.5em 1em;
+    padding: 0.2em;
+    float: right;
+    clear: right;
+    font-size: 88%;
+    line-height: 1.6;
+}
+
+.details li a {
+    color: blue;
+}
+
+/* Flex Box for responsive layout */
+
+.main-header, 
+.main-nav, .row {
+    display: flex;
+    justify-content:space-between;   
+}
+
+.intro_information, .intro_text {
+    flex: 0.5;
+    padding: .75em;
+    align-self: flex-start;
+}
+
+.mt-lists h2{
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.info_box .details{
+    margin-top: 20px;
+}
+.main-header {
+    padding-left: 70px;
+    padding-right: 70px;
+}
+
+.col{
+    flex:1;
+    padding: .3em;
+    margin: .3em;
+    align-self: auto;
+}
+
+/*Toggle Menu */
+
+.main-header h1{
+    color:#fff;
+    height: 50px;
+    line-height: 50px;
+    float: left;
+}
+
+.Nav-img nav ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.Nav-img nav ul li{
+    list-style: none;
+}
+
+.Nav-img .main-header .site-name a {
+    text-decoration: none;
+}
+
+.Nav-img .main-header .menu-burger {
+    color: #077bb3;
+    float: right;
+    line-height: 50px;
+    font-size: 24px;
+    cursor: pointer;
+    display: none;
+}
+
+/* Media Queries */
+
+@media (max-width: 767.98px) { 
+
+    .main-header {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+    }
+
+    .Nav-img {
+        margin: 0;
+    } 
+    
+    .row {
+        flex-flow: column wrap;
+        padding-left: 10px;
+        padding-right: 15px;
+        margin-left: 0px;
+        margin-right: 25px;
+    }
+
+    .tagline {
+        padding-top: 35px;
+        font-size: 1.48em;  
+    }
+
+    .galleryContainer {
+        height:515px;
+    }
+
+    .main-nav{
+        margin-top: -25px;
+        }
+
+    .Nav-img .main-header .site-name {
+        text-align: center;
+        }
+
+    .site-name a,
+    .main-nav a {
+
+        height: 25px;
+        text-align: left;
+        }
+
+    .Nav-img .main-header .site-name a{
+        padding-top: 5px;
+        }
+        
+    .col{
+        
+        width: 100%;
+        text-align: justify;
+    }
+
+     
+     .tag{
+         text-align: center;
+        font-size: 22px;
+        }
+
+    .infobox {
+        flex-direction: column;
+        }
+    
+    .intro_information .intro_text {
+        justify-content: center;
+    }
+}
+
+@media (max-width: 575.98px) { 
+    .main-header{
+        padding: 0 20px;
+    }
+
+    .main-header .site-name a{
+        font-size: 0.75em;
+    }
+
+    .row {
+        flex-flow: column wrap;
+    }
+
+    .main-nav{
+        margin-top: -25px;
+    }
+
+    .Nav-img .main-header .site-name {
+        text-align: center;
+    }
+
+    .site-name a,
+    .main-nav a {
+        padding: 10px 15px;
+        font-size: 0.85em;
+        text-align: left;
+    }
+
+    .Nav-img .main-header .site-name a{
+        padding-top: 10px;
+        
+    }
+
+
+    .Nav-img .main-header .menu-burger {
+        display: block;
+    }
+
+    .Nav-img .main-header .main-nav {
+        border-top: 2px #077bb3 solid;
+        display: none;
+        position: absolute;
+        z-index: 2;
+        width: 100%;
+        height:calc(100vh-50px);
+        background: #f5f4f4;
+        top: 70px;
+        left:0;
+        transition: 0.5s;
+    }
+
+    .Nav-img .main-header ul {
+         display:block;
+         text-align: center;
+    }
+
+    .Nav-img .main-header ul a{
+         border-bottom: 1px solid rgba(0,0,0,.2);
+    }
+
+    .main-footer {
+        margin: 0;
+    }
+}
