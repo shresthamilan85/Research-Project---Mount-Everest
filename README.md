@@ -7,8 +7,8 @@ The site has contents in multiple columns on devices with large screen sizes, an
 The responsiveness of the website can be checked using the Developer Tools in the Google Chrome browser. Right-click anywhere inside the website and then select inspect from the available options. This will take you to the developer tools where the second tool on the toolbar is the “Toggle device toolbar”. The Toggle device toolbar options will let you inspect the site in a variety of mobile devices of different screen sizes. Further, you can shrink or extend the width of the web page to check its responsiveness.
 
 ## Known errors
-Please check the sites on all the available browsers and Google Chrome is a must
-Sometimes the links get disappeared or appeared vertically when transitioning beteween different screen sizes. Please refresh the browser to correct this issue
+Please check the sites on all the available browsers and Google Chrome is must.
+Sometimes the links get disappeared or appeared vertically when transitioning beteween different screen sizes. Please refresh the browser to correct this issue.
 
 sometimes the images will load slowly. Please allow some time to fully load the images.
 Pause the Carousel first before you move the images left/right.
